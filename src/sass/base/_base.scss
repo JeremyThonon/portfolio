@@ -1,0 +1,12 @@
+@import '../utils/sizes';
+@import '../utils/variables';
+
+html {
+    font-size: $unit;
+}
+
+body {
+    padding: $padding-big $padding-xbig;
+    color: $main-yellow-bright;
+    background-color: $main-dark-charcoal;
+}
