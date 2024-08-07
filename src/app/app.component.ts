@@ -5,7 +5,10 @@ import { CoreModule } from "./core/core.module";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CoreModule],
+  imports: [
+    RouterOutlet, 
+    CoreModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
