@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
-  ngOnInit(): void { }
+  isMobile: boolean = false;
+
+  constructor(private responsive: BreakpointObserver) { }
+
+  ngOnInit() { 
+    this.responsive.observe(Breakpoints.Handset)
+      .subscribe(result => {
+        if (result.matches) {
+          this.isMobile = result.matches;
+        } else {
+          this.isMobile = false;
+        }
+    });
+  }
 }
