@@ -1,0 +1,12 @@
+@import '../utils/sizes';
+@import '../utils/variables';
+
+header {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    padding: $padding-default;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}

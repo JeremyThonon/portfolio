@@ -1,0 +1,22 @@
+$unit: 10px;
+
+$size-default: calc($unit * 1.6);
+$size-xsmall: calc($unit * 0.4);
+$size-small: calc($unit * 0.8);
+$size-medium: calc($unit * 1.2);
+$size-big: calc($unit * 2.4);
+$size-xbig: calc($unit * 3.2);
+
+$padding-xsmall: $size-xsmall;
+$padding-small: $size-small;
+$padding-default: $size-default;
+$padding-medium: $size-medium;
+$padding-big: $size-big;
+$padding-xbig: $size-xbig;
+
+$margin-xsmall: $size-xsmall;
+$margin-small: $size-small;
+$margin-default: $size-default;
+$margin-medium: $size-medium;
+$margin-big: $size-big;
+$margin-xbig: $size-xbig;
