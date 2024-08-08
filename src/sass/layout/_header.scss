@@ -1,12 +1,11 @@
 @import '../utils/sizes';
 @import '../utils/variables';
 
-header {
-    position: relative;
+.header {
     width: 100%;
-    height: 5rem;
+    height: auto;
     padding: $padding-default;
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    justify-content: flex-end;
 }
