@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './menu-mobile.component.scss'
 })
 export class MenuMobileComponent {
+  isOpen: boolean = false;
 
+  toggleMenu = () => {
+    this.isOpen = !this.isOpen;
+  }
 }
