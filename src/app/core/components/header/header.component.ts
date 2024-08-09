@@ -7,7 +7,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
-  isMobile: boolean = false;
+  isMobile = false;
 
   constructor(private responsive: BreakpointObserver) { }
 

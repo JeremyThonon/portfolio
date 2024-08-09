@@ -1,16 +1,28 @@
 import { Component } from '@angular/core';
 import{ links } from '../menu.conf';
 
+interface Link {
+  index: string;
+  label: string;
+  url: string;
+}
+
 @Component({
   selector: 'app-menu-mobile',
   templateUrl: './menu-mobile.component.html',
   styleUrl: './menu-mobile.component.scss'
 })
 export class MenuMobileComponent {
-  isOpen: boolean = false;
-  links: Array<any> = links;
+  isOpen = false;
+  links: Link[] = links;
 
   toggleMenu = () => {
     this.isOpen = !this.isOpen;
+  }
+  handleKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        this.toggleMenu();
+    }
   }
 }

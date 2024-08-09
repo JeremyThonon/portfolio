@@ -1,28 +1,30 @@
 <div class="menu-mobile">
-    <div class="toggle-container">
-        <button 
-            (click)="toggleMenu()"
-            class="toggle"
-            [ngClass]="{'open': isOpen}"
-        >
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
-    </div>
+  <div class="toggle-container">
+    <button 
+      (click)="toggleMenu()"
+      class="toggle"
+      [ngClass]="{'open': isOpen}"
+    >
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+  </div>
 
-    <nav *ngIf="isOpen" [ngClass]="{'visible': isOpen}">
-        <ul class="links">
-            <li *ngFor="let link of links" class="links-item">
-                <span class="links-item__index">{{ link.index }}</span>
-                <a 
-                    class="links-item__link"
-                    routerLinkActive="active"
-                    (click)="toggleMenu()"
-                >
-                    {{ link.label }}
-                </a>
-            </li>
-        </ul>
-    </nav>
+  <nav *ngIf="isOpen" [ngClass]="{'visible': isOpen}">
+    <ul class="links">
+      <li *ngFor="let link of links" class="links-item">
+        <span class="links-item__index">{{ link.index }}</span>
+        <a 
+          class="links-item__link"
+          routerLinkActive="active"
+          (click)="toggleMenu()"
+          (keydown)="handleKeydown($event)"
+          tabindex="0"
+        >
+          {{ link.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>

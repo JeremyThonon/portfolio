@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class FooterComponent {
-  copyRight: string = 'Designed & built by Jérémy Thonon'
+  copyRight = 'Designed & built by Jérémy Thonon'
 }
