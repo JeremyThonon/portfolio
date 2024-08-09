@@ -1,5 +1,6 @@
 <header class="header">
-    <!-- <h1>Title</h1> -->
-    <app-menu-mobile ></app-menu-mobile>
-    <!-- <app-menu *ngIf="!isMobile"></app-menu> -->
+    <app-menu-mobile *ngIf="isMobile; else elseBlock"></app-menu-mobile>
+    <ng-template #elseBlock>
+        <app-menu></app-menu>
+    </ng-template>
 </header>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{ links } from '../menu.conf';
 
 @Component({
   selector: 'app-menu-mobile',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class MenuMobileComponent {
   isOpen: boolean = false;
+  links: Array<any> = links;
 
   toggleMenu = () => {
     this.isOpen = !this.isOpen;
