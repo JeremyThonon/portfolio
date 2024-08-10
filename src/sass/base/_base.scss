@@ -3,19 +3,30 @@
 @import './typography';
 
 html {
-    font-size: $unit;
+  width: 100vw;
+  height: 100vh;
+  font-size: $unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    padding: $padding-big;
-    color: $main-white;
-    background-color: $main-dark-charcoal;
+  width: 100%;
+  height: 100%;
+  color: $main-white;
+  background-color: $main-dark-charcoal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-    main {
-        width: calc(100% - 0.2rem);
-        height: calc(100% - 0.2rem);
-        border: 0.1rem solid $main-yellow-bright;
-    }
+app-root {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: none;
 }

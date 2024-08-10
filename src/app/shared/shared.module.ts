@@ -4,16 +4,8 @@ import { MenuComponent } from './components/menus/menu/menu.component';
 import { MenuMobileComponent } from './components/menus/menu-mobile/menu-mobile.component';
 
 @NgModule({
-  declarations: [
-    MenuComponent,
-    MenuMobileComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    MenuComponent,
-    MenuMobileComponent
-  ]
+  declarations: [MenuComponent, MenuMobileComponent],
+  imports: [CommonModule],
+  exports: [MenuComponent, MenuMobileComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
