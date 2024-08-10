@@ -1,0 +1,19 @@
+@import '../../../../sass/main';
+
+.button {
+  border: 0.1rem solid $main-yellow-bright;
+  background-color: transparent;
+  padding: $padding-medium $padding-big;
+  border-radius: $size-xsmall;
+  color: white;
+  transition: all 0.3s ease-in-out;
+
+  .button-label {
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $main-yellow-bright;
+  }
+}
