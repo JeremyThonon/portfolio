@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { links } from '../menu.conf';
 
 @Component({
   selector: 'app-menu',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
+  links = links;
 
+  handleKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+    }
+  }
 }

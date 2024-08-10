@@ -1,4 +1,6 @@
-export const links = [
+import { LinkType } from "./menu.interface";
+
+export const links: LinkType[] = [
   {
     index: '01.',
     label: 'Home',
