@@ -1,18 +1,16 @@
 <div class="menu">
-    <nav>
-      <ul class="links">
-        <li *ngFor="let link of links" class="links-item">
-          <span class="links-item__index">{{ link.index }}</span>
-          <a 
-            class="links-item__link"
-            routerLinkActive="active"
-            (keydown)="handleKeydown($event)"
-            tabindex="0"
-          >
-            {{ link.label }}
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <nav>
+    <ul class="links">
+      <li *ngFor="let link of links" class="links-item">
+        <span class="links-item__index">{{ link.index }}</span>
+        <a
+          class="links-item__link"
+          routerLinkActive="active"
+          (keydown)="handleKeydown($event)"
+          tabindex="0">
+          {{ link.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
-  

@@ -3,30 +3,30 @@
 @import './typography';
 
 html {
-    width: 100vw;
-    height: 100vh;
-    font-size: $unit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: $unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    color: $main-white;
-    background-color: $main-dark-charcoal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  color: $main-white;
+  background-color: $main-dark-charcoal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 app-root {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 button {
-    border: none;
+  border: none;
 }

@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
-
 export class FooterComponent {
-  copyRight = 'Designed & built by Jérémy Thonon'
+  copyRight = 'Designed & built by Jérémy Thonon';
 }

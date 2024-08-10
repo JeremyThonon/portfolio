@@ -3,12 +3,12 @@
 @import '../base/typography';
 
 .footer {
-    width: 100%;
-    height: 10rem;
-    padding: $padding-default;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: $tertiary-font;
-    font-size: $size-medium;
+  width: 100%;
+  height: 10rem;
+  padding: $padding-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $tertiary-font;
+  font-size: $size-medium;
 }

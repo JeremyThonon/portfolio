@@ -4,9 +4,6 @@ import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    CoreModule,
-  ]
+  imports: [CommonModule, CoreModule],
 })
-export class AppModule { }
+export class AppModule {}
