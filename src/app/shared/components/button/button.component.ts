@@ -7,8 +7,18 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() label = '';
+  @Input() download = false;
 
   handleClick() {
-    console.log('Button clicked');
+    const a = document.createElement('a');
+    const url = 'resume.pdf';
+
+    a.href = url;
+    a.target = '_blank';
+    a.download = 'resume.pdf';
+
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   }
 }

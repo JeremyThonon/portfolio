@@ -8,6 +8,8 @@ import { links } from '../menu.conf';
 })
 export class MenuComponent {
   links = links;
+  buttonLabel = 'Resume';
+  buttonDownload = true;
 
   handleKeydown(event: KeyboardEvent): void {
     if (event.key === 'Enter' || event.key === ' ') {
