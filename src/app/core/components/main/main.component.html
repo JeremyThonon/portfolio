@@ -1,3 +1,9 @@
 <main>
-  <app-content></app-content>
+  <app-content
+    *ngFor="let content of contents"
+    [ngClass]="content.class"
+    [span]="content.span"
+    [title]="content.title"
+    [paragraph]="content.paragraph"
+    [button]="content.button"></app-content>
 </main>

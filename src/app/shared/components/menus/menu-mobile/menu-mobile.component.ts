@@ -10,7 +10,6 @@ export class MenuMobileComponent {
   isOpen = false;
   links = links;
   buttonLabel = 'Resume';
-  buttonDownload = true;
 
   toggleMenu = () => {
     this.isOpen = !this.isOpen;

@@ -1,1 +1,8 @@
-<h1>Content</h1>
+<article [ngClass]="class">
+  <span *ngIf="display">{{ span.text }}</span>
+  <h1 *ngIf="title.display">{{ title.text }}</h1>
+  <p *ngIf="paragraph.display">
+    {{ paragraph.text }}
+  </p>
+  <app-button *ngIf="button.display" [label]="button.text"></app-button>
+</article>

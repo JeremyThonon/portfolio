@@ -8,12 +8,13 @@
   color: white;
   transition: all 0.3s ease-in-out;
 
-  .button-label {
+  p {
     font-size: 1.2rem;
   }
 
   &:hover {
     cursor: pointer;
     color: $main-yellow-bright;
+    background-color: rgba($main-yellow-bright, 0.1);
   }
 }

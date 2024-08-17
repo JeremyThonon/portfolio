@@ -7,9 +7,17 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() label = '';
+  @Input() buttonClass = '';
+  @Input() labelClass = '';
   @Input() download = false;
 
-  handleClick() {
+  handleClick(download: boolean) {
+    if (download) {
+      this.downloadPdf();
+    }
+  }
+
+  downloadPdf() {
     const a = document.createElement('a');
     const url = 'resume.pdf';
 
