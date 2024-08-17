@@ -7,5 +7,5 @@ import { contents } from './main.conf';
   styleUrl: './main.component.scss',
 })
 export class MainComponent {
-  contents = contents;
+  contents: {} = contents;
 }
