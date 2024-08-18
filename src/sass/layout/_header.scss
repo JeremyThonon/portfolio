@@ -2,6 +2,7 @@
 @import '../utils/variables';
 
 .header {
+  position: fixed;
   width: 100%;
   height: auto;
   padding: $padding-default;

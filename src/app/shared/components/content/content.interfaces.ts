@@ -1,5 +1,6 @@
 interface Content {
   class?: string;
+  id: string;
   span: custom;
   title: custom;
   paragraph: custom;

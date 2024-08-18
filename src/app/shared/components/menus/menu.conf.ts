@@ -4,16 +4,16 @@ export const links: LinkType[] = [
   {
     index: '01.',
     label: 'Home',
-    url: '/',
+    url: '#home',
   },
   {
     index: '02.',
     label: 'About',
-    url: '/about',
+    url: '#about',
   },
   {
     index: '03.',
     label: 'Contact',
-    url: '/contact',
+    url: '#contact',
   },
 ];

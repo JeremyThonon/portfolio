@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',

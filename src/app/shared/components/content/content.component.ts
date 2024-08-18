@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ContentComponent {
   @Input() class = '';
+  @Input() id = '';
   @Input() span = { text: '', display: false };
   @Input() title = { text: '', display: false };
   @Input() paragraph = { text: '', display: false };

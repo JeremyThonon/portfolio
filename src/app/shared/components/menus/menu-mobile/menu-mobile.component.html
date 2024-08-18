@@ -12,6 +12,7 @@
       <li *ngFor="let link of links" class="links-item">
         <span class="links-item__index">{{ link.index }}</span>
         <a
+          href="{{ link.url }}"
           class="links-item__link"
           routerLinkActive="active"
           (click)="toggleMenu()"

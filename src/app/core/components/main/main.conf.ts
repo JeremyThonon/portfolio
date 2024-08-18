@@ -3,6 +3,7 @@ import { ContentType } from '../../../shared/components/content/content.interfac
 export const contents: ContentType[] = [
   {
     class: 'content introduction',
+    id: 'intro',
     span: {
       text: 'Hi, my name is',
       display: true,
@@ -22,12 +23,13 @@ export const contents: ContentType[] = [
   },
   {
     class: 'content about',
+    id: 'about',
     span: {
       text: '',
       display: false,
     },
     title: {
-      text: 'Section 2',
+      text: 'About me',
       display: true,
     },
     paragraph: {
@@ -40,7 +42,28 @@ export const contents: ContentType[] = [
     },
   },
   {
+    class: 'content work',
+    id: 'work',
+    span: {
+      text: '',
+      display: false,
+    },
+    title: {
+      text: 'Work',
+      display: true,
+    },
+    paragraph: {
+      text: 'This is a simple website created with Angular.',
+      display: false,
+    },
+    button: {
+      text: 'Contact me',
+      display: false,
+    },
+  },
+  {
     class: 'content contact',
+    id: 'contact',
     span: {
       text: '',
       display: false,
