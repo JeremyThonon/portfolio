@@ -25,8 +25,8 @@ export const contents: ContentType[] = [
     class: 'content about',
     id: 'about',
     span: {
-      text: '',
-      display: false,
+      text: '01.',
+      display: true,
     },
     title: {
       text: 'About me',
@@ -34,7 +34,7 @@ export const contents: ContentType[] = [
     },
     paragraph: {
       text: 'This is a simple website created with Angular.',
-      display: true,
+      display: false,
     },
     button: {
       text: 'Learn more',
@@ -45,19 +45,19 @@ export const contents: ContentType[] = [
     class: 'content work',
     id: 'work',
     span: {
-      text: '',
-      display: false,
+      text: '02.',
+      display: true,
     },
     title: {
-      text: 'Work',
+      text: 'My works',
       display: true,
     },
     paragraph: {
-      text: 'This is a simple website created with Angular.',
+      text: '',
       display: false,
     },
     button: {
-      text: 'Contact me',
+      text: '',
       display: false,
     },
   },
@@ -65,20 +65,20 @@ export const contents: ContentType[] = [
     class: 'content contact',
     id: 'contact',
     span: {
-      text: '',
-      display: false,
+      text: '03.',
+      display: true,
     },
     title: {
-      text: 'Section 3',
+      text: 'Contact',
       display: true,
     },
     paragraph: {
       text: 'This is a simple website created with Angular.',
-      display: true,
+      display: false,
     },
     button: {
       text: 'Contact me',
-      display: true,
+      display: false,
     },
   },
 ];

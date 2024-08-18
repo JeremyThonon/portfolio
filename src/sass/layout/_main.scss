@@ -23,6 +23,20 @@ main {
       justify-content: center;
       gap: 3rem;
 
+      div {
+        display: flex;
+
+        span {
+          font-family: $tertiary-font;
+          font-size: 1.5rem;
+          color: $main-yellow-bright;
+        }
+
+        h2 {
+          font-family: $primary-font;
+        }
+      }
+
       p {
         letter-spacing: 0.1rem;
       }
@@ -36,15 +50,13 @@ main {
 
   .introduction {
     article {
-      span {
-        font-family: $tertiary-font;
-        font-size: 1.5rem;
-        color: $main-yellow-bright;
-      }
+      div {
+        flex-direction: column;
+        gap: 3rem;
 
-      h1 {
-        font-family: $primary-font;
-        font-size: 7rem;
+        h2 {
+          font-size: 7rem;
+        }
       }
 
       p {
@@ -57,12 +69,14 @@ main {
 
     @media screen and (max-width: 768px) {
       article {
-        span {
-          font-size: 1.2rem;
-        }
+        div {
+          span {
+            font-size: 1.2rem;
+          }
 
-        h1 {
-          font-size: 4rem;
+          h2 {
+            font-size: 4rem;
+          }
         }
 
         p {
@@ -72,11 +86,41 @@ main {
     }
   }
 
-  .about {
-    background-color: red;
-  }
-
+  .about,
+  .work,
   .contact {
-    background-color: green;
+    article {
+      div {
+        gap: 1rem;
+
+        span {
+          display: flex;
+          align-items: flex-end;
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      article {
+        div {
+          span {
+            font-size: 2rem;
+          }
+
+          h2 {
+            font-size: 2.5rem;
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }

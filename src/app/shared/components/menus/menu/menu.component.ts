@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { links } from '../menu.conf';
+import { links, scrollToContent } from '../menu.conf';
 
 @Component({
   selector: 'app-menu',
@@ -15,4 +15,8 @@ export class MenuComponent {
       event.preventDefault();
     }
   }
+
+  handleClick = (id: string): void => {
+    scrollToContent(id);
+  };
 }

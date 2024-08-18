@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { links } from '../menu.conf';
+import { links, scrollToContent } from '../menu.conf';
 
 @Component({
   selector: 'app-menu-mobile',
@@ -14,10 +14,15 @@ export class MenuMobileComponent {
   toggleMenu = () => {
     this.isOpen = !this.isOpen;
   };
+
   handleKeydown(event: KeyboardEvent): void {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       this.toggleMenu();
     }
   }
+
+  handleClick = (id: string): void => {
+    scrollToContent(id);
+  };
 }
