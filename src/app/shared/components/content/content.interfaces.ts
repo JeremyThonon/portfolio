@@ -3,6 +3,7 @@ interface Content {
   id: string;
   span: custom;
   title: custom;
+  subtitle: custom;
   paragraph: custom;
   button: custom;
 }

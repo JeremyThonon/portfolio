@@ -39,6 +39,10 @@ main {
 
       p {
         letter-spacing: 0.1rem;
+        font-family: $secondary-font;
+        font-size: 1.8rem;
+        color: darkgray;
+        line-height: 2.2rem;
       }
     }
 
@@ -51,19 +55,47 @@ main {
   .introduction {
     article {
       div {
+        width: 100%;
         flex-direction: column;
         gap: 3rem;
 
-        h2 {
+        h2,
+        h3 {
           font-size: 7rem;
+        }
+
+        h3 {
+          color: darkgray;
         }
       }
 
       p {
-        font-family: $secondary-font;
-        font-size: 1.8rem;
-        color: lightgrey;
-        line-height: 2.2rem;
+        a {
+          color: $main-yellow-bright;
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -0.1rem;
+            height: 0.1rem;
+            width: 0;
+            background-color: $main-yellow-bright;
+            transition: width 250ms ease-in-out;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+
+      button {
+        p {
+          color: white;
+        }
       }
     }
 
@@ -74,7 +106,8 @@ main {
             font-size: 1.2rem;
           }
 
-          h2 {
+          h2,
+          h3 {
             font-size: 4rem;
           }
         }
@@ -83,6 +116,10 @@ main {
           font-size: 1.5rem;
         }
       }
+    }
+  }
+  .about {
+    article {
     }
   }
 

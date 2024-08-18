@@ -9,11 +9,15 @@ export const contents: ContentType[] = [
       display: true,
     },
     title: {
-      text: 'Jérémy Thonon',
+      text: 'Jérémy Thonon.',
+      display: true,
+    },
+    subtitle: {
+      text: 'I build things for the web.',
       display: true,
     },
     paragraph: {
-      text: 'As a passionate front-end developer, I thrive in an environment where my passion for development comes into its own. My commitment to technical excellence is reflected in each of my projects, translating into a focus on best practices, guaranteeing robust and sustainable solutions.In the near future, my ambition is to improve my skills in backend development, seeking new challenges and opportunities to broaden my technical skills.',
+      text: 'I’m a frontend engineer specializing in designing & building exceptional digital experiences.<br> I am focused building accessible and dynamic digital experience at <a href="https://www.decathlon.be" target="_blank">Decathlon Belgium</a>',
       display: true,
     },
     button: {
@@ -32,9 +36,13 @@ export const contents: ContentType[] = [
       text: 'About me',
       display: true,
     },
-    paragraph: {
-      text: 'This is a simple website created with Angular.',
+    subtitle: {
+      text: '',
       display: false,
+    },
+    paragraph: {
+      text: 'Hello! My name is Jeremy and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I decided to try C, Python and Javascript programming languages on EDX platform — Writing some lines of code to made a remake of Mario pyramids ! Fast-forward to today, and I’ve had the privilege of working at an international sport agency, a huge and dynamic corporation. My main focus these days is to improve my backend development skills, be curious about new technologies and best practices. I also recently started to learn more about Rust and Typescript programming languages. Here are a few technologies I’ve been working with recently:',
+      display: true,
     },
     button: {
       text: 'Learn more',
@@ -51,6 +59,10 @@ export const contents: ContentType[] = [
     title: {
       text: 'My works',
       display: true,
+    },
+    subtitle: {
+      text: '',
+      display: false,
     },
     paragraph: {
       text: '',
@@ -71,6 +83,10 @@ export const contents: ContentType[] = [
     title: {
       text: 'Contact',
       display: true,
+    },
+    subtitle: {
+      text: '',
+      display: false,
     },
     paragraph: {
       text: 'This is a simple website created with Angular.',

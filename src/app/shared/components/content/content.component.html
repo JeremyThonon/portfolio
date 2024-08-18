@@ -2,9 +2,8 @@
   <div>
     <span *ngIf="span.display">{{ span.text }}</span>
     <h2 *ngIf="title.display">{{ title.text }}</h2>
+    <h3 *ngIf="subtitle.display">{{ subtitle.text }}</h3>
   </div>
-  <p *ngIf="paragraph.display">
-    {{ paragraph.text }}
-  </p>
+  <p *ngIf="paragraph.display" [innerHTML]="paragraph.text"></p>
   <app-button *ngIf="button.display" [label]="button.text"></app-button>
 </article>

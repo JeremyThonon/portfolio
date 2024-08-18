@@ -10,6 +10,7 @@ export class ContentComponent {
   @Input() id = '';
   @Input() span = { text: '', display: false };
   @Input() title = { text: '', display: false };
+  @Input() subtitle = { text: '', display: false };
   @Input() paragraph = { text: '', display: false };
   @Input() button = { text: '', display: false };
 }

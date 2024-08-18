@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { scrollToContent } from '../menus/menu.conf';
 
 @Component({
   selector: 'app-button',
@@ -14,6 +15,8 @@ export class ButtonComponent {
   handleClick(download: boolean) {
     if (download) {
       this.downloadPdf();
+    } else if (this.label === 'About me') {
+      scrollToContent('#about');
     }
   }
 
