@@ -8,7 +8,24 @@
     [subtitle]="content.subtitle"
     [decorative]="content.decorative"
     [paragraph]="content.paragraph"
-    [button]="content.button"></app-content>
+    [button]="content.button">
+    <div *ngIf="content.id === 'about'" skills class="additional-infos">
+      <span class="span-one"></span>
+      <span class="span-two"></span>
+      <ul>
+        <li>Javascript</li>
+        <li>Typescript</li>
+        <li>Angular</li>
+      </ul>
+
+      <ul>
+        <li>Svelte.js</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+      </ul>
+    </div>
+  </app-content>
+
   <app-email-block></app-email-block>
   <app-socials-block></app-socials-block>
 </main>

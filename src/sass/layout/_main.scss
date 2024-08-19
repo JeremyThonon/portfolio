@@ -120,6 +120,50 @@ main {
   }
   .about {
     article {
+      position: relative;
+      .additional-infos {
+        display: flex;
+        gap: 2rem;
+
+        .span-one {
+          z-index: 2;
+          position: absolute;
+          right: 6rem;
+          bottom: 12.5rem;
+          width: 20rem;
+          height: 20rem;
+          border-radius: 0.4rem;
+          background-color: $main-yellow-bright;
+        }
+        .span-two {
+          z-index: 1;
+          position: absolute;
+          right: 4rem;
+          bottom: 14.5rem;
+          width: 20rem;
+          height: 20rem;
+          border-radius: 0.4rem;
+          border: 2px solid $main-yellow-bright;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          li {
+            list-style: '>';
+            display: list-item;
+            color: darkgrey;
+            font-family: $tertiary-font;
+            font-size: 1.5rem;
+
+            &::marker {
+              color: $main-yellow-bright;
+            }
+          }
+        }
+      }
     }
   }
 
