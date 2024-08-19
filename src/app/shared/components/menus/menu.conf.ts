@@ -8,11 +8,16 @@ export const links: LinkType[] = [
   },
   {
     index: '02.',
+    label: 'Experience',
+    id: '#experience',
+  },
+  {
+    index: '03.',
     label: 'Work',
     id: '#work',
   },
   {
-    index: '03.',
+    index: '04.',
     label: 'Contact',
     id: '#contact',
   },

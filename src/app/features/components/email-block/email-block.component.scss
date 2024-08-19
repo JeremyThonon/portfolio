@@ -1,0 +1,36 @@
+@import '../../../../sass/main';
+
+div {
+  position: fixed;
+  bottom: 14.5rem;
+  right: -100px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: $padding-big 0 $padding-big 0;
+  rotate: 90deg;
+
+  a {
+    margin-left: 1rem;
+    color: darkgrey;
+    font-family: $tertiary-font;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.025);
+      color: $main-yellow-bright;
+    }
+  }
+
+  span {
+    height: 0.05rem;
+    width: 10em;
+    background-color: darkgrey;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

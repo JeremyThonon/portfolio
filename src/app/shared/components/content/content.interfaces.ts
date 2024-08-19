@@ -4,6 +4,7 @@ interface Content {
   span: custom;
   title: custom;
   subtitle: custom;
+  decorative: boolean;
   paragraph: custom;
   button: custom;
 }

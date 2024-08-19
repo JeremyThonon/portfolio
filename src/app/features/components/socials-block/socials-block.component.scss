@@ -1,0 +1,34 @@
+@import '../../../../sass/main';
+
+div {
+  position: fixed;
+  bottom: 6.5rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: $padding-big 0 $padding-big 0;
+  rotate: 90deg;
+
+  svg {
+    color: darkgrey;
+    rotate: -90deg;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.025);
+      color: $main-yellow-bright;
+    }
+  }
+
+  span {
+    height: 0.05rem;
+    width: 10em;
+    background-color: darkgrey;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

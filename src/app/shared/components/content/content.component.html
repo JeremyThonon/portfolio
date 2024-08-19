@@ -1,9 +1,15 @@
 <article [ngClass]="class" [id]="id">
-  <div>
-    <span *ngIf="span.display">{{ span.text }}</span>
-    <h2 *ngIf="title.display">{{ title.text }}</h2>
-    <h3 *ngIf="subtitle.display">{{ subtitle.text }}</h3>
+  <div class="content-title-container">
+    <span class="title-span-text" *ngIf="span.display">{{ span.text }}</span>
+    <h2 class="title" *ngIf="title.display">{{ title.text }}</h2>
+    <h3 class="subtitle" *ngIf="subtitle.display">{{ subtitle.text }}</h3>
+    <div class="decorative-title-container" *ngIf="decorative">
+      <span class="title-span-line"></span>
+    </div>
   </div>
-  <p *ngIf="paragraph.display" [innerHTML]="paragraph.text"></p>
+  <p
+    class="content-text-container"
+    *ngIf="paragraph.display"
+    [innerHTML]="paragraph.text"></p>
   <app-button *ngIf="button.display" [label]="button.text"></app-button>
 </article>
