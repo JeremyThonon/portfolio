@@ -11,7 +11,9 @@ export class HeaderComponent implements OnInit {
   constructor(private responsive: BreakpointObserver) {}
 
   ngOnInit() {
-    this.responsive.observe(Breakpoints.Handset).subscribe(result => {
+    const { XSmall, Small } = Breakpoints;
+
+    this.responsive.observe([XSmall, Small]).subscribe(result => {
       if (result.matches) {
         this.isMobile = result.matches;
       } else {

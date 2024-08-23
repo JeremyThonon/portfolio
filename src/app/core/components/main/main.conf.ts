@@ -106,24 +106,24 @@ export const contents: ContentType[] = [
     id: 'contact',
     span: {
       text: '04.',
-      display: true,
+      display: false,
     },
     title: {
-      text: 'Contact',
+      text: 'Get in touch',
       display: true,
     },
     subtitle: {
-      text: '',
-      display: false,
+      text: 'Feel free to contact me',
+      display: true,
     },
-    decorative: true,
+    decorative: false,
     paragraph: {
       text: 'This is a simple website created with Angular.',
       display: false,
     },
     button: {
-      text: 'Contact me',
-      display: false,
+      text: 'Email',
+      display: true,
     },
   },
 ];
