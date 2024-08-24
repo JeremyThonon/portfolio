@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { scrollToContent } from '../menus/menu.conf';
 
 @Component({
   selector: 'app-button',
@@ -7,9 +8,19 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() label = '';
+  @Input() buttonClass = '';
+  @Input() labelClass = '';
   @Input() download = false;
 
-  handleClick() {
+  handleClick(download: boolean) {
+    if (download) {
+      this.downloadPdf();
+    } else if (this.label === 'About me') {
+      scrollToContent('#about');
+    }
+  }
+
+  downloadPdf() {
     const a = document.createElement('a');
     const url = 'resume.pdf';
 

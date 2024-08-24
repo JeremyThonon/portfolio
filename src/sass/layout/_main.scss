@@ -1,0 +1,212 @@
+@import '../utils/sizes';
+@import '../utils/variables';
+@import '../base/typography';
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 $padding-big;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .content {
+    width: 70vw;
+    height: 100vh;
+    padding: $padding-big;
+
+    article {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+
+      div {
+        display: flex;
+
+        .title-span-text {
+          font-family: $tertiary-font;
+          font-size: 1.5rem;
+          color: $main-yellow-bright;
+        }
+
+        h2 {
+          font-family: $primary-font;
+        }
+      }
+
+      p {
+        letter-spacing: 0.1rem;
+        font-family: $secondary-font;
+        font-size: 1.8rem;
+        color: darkgray;
+        line-height: 2.2rem;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  .introduction {
+    article {
+      div {
+        width: 100%;
+        flex-direction: column;
+        gap: 3rem;
+
+        h2,
+        h3 {
+          font-size: 7rem;
+        }
+
+        h3 {
+          color: darkgray;
+        }
+      }
+
+      p {
+        a {
+          color: $main-yellow-bright;
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -0.1rem;
+            height: 0.1rem;
+            width: 0;
+            background-color: $main-yellow-bright;
+            transition: width 250ms ease-in-out;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+
+      button {
+        p {
+          color: white;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      article {
+        div {
+          span {
+            font-size: 1.2rem;
+          }
+
+          h2,
+          h3 {
+            font-size: 4rem;
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .about {
+    position: relative;
+    .additional-content-container {
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 30rem;
+      width: 30rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: $main-yellow-bright;
+
+      .about-additional-content {
+        width: 29.5rem;
+        height: 29.5rem;
+        background-color: $main-dark-charcoal;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .experience {
+  }
+  .work {
+  }
+  .contact {
+  }
+
+  .about,
+  .experience,
+  .work,
+  .contact {
+    width: 60vw;
+
+    article {
+      div {
+        gap: 1rem;
+
+        .title-span-text {
+          display: flex;
+          align-items: flex-end;
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          font-size: 3rem;
+        }
+
+        div {
+          width: 40rem;
+          display: flex;
+          align-items: center;
+
+          .title-span-line {
+            width: 100%;
+            height: 0.05rem;
+            background-color: darkgrey;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100vw;
+
+      article {
+        div {
+          .title-span-text {
+            font-size: 1.5rem;
+          }
+
+          h2 {
+            font-size: 2rem;
+          }
+
+          div {
+            width: 10rem;
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

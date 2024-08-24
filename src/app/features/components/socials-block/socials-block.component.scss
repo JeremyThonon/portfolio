@@ -1,0 +1,46 @@
+@import '../../../../sass/main';
+
+.socials {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 14rem;
+  padding: 0 $padding-big 0 $padding-big;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+
+  .socials-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    a {
+      svg {
+        color: darkgrey;
+        transition: all 250ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.025);
+          color: $main-yellow-bright;
+        }
+      }
+    }
+  }
+
+  .decorative-line-container {
+    height: 10rem;
+    width: 0.05rem;
+    background-color: darkgrey;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { links } from '../menu.conf';
+import { links, scrollToContent } from '../menu.conf';
 
 @Component({
   selector: 'app-menu',
@@ -9,11 +9,14 @@ import { links } from '../menu.conf';
 export class MenuComponent {
   links = links;
   buttonLabel = 'Resume';
-  buttonDownload = true;
 
   handleKeydown(event: KeyboardEvent): void {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
     }
   }
+
+  handleClick = (id: string): void => {
+    scrollToContent(id);
+  };
 }

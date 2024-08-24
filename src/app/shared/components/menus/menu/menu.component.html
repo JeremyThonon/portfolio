@@ -4,6 +4,7 @@
       <li *ngFor="let link of links" class="links-item">
         <span class="links-item__index">{{ link.index }}</span>
         <a
+          (click)="handleClick(link.id)"
           class="links-item__link"
           routerLinkActive="active"
           (keydown)="handleKeydown($event)"
@@ -13,9 +14,6 @@
       </li>
     </ul>
 
-    <app-button
-      class="menu__button"
-      [label]="buttonLabel"
-      [download]="buttonDownload"></app-button>
+    <app-button [label]="buttonLabel" [download]="true"></app-button>
   </nav>
 </div>

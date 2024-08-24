@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,7 +11,9 @@ export class HeaderComponent implements OnInit {
   constructor(private responsive: BreakpointObserver) {}
 
   ngOnInit() {
-    this.responsive.observe(Breakpoints.Handset).subscribe(result => {
+    const { XSmall, Small } = Breakpoints;
+
+    this.responsive.observe([XSmall, Small]).subscribe(result => {
       if (result.matches) {
         this.isMobile = result.matches;
       } else {

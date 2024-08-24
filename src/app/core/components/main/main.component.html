@@ -1,0 +1,21 @@
+<main>
+  <app-content
+    *ngFor="let content of contents"
+    [ngClass]="content.class"
+    [id]="content.id"
+    [span]="content.span"
+    [title]="content.title"
+    [subtitle]="content.subtitle"
+    [decorative]="content.decorative"
+    [paragraph]="content.paragraph"
+    [button]="content.button">
+    <section additional-content class="additional-content-container">
+      <div
+        class="about-additional-content"
+        *ngIf="content.id === 'about'"></div>
+    </section>
+  </app-content>
+
+  <app-email-block></app-email-block>
+  <app-socials-block></app-socials-block>
+</main>

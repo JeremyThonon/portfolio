@@ -2,6 +2,8 @@
 @import '../utils/variables';
 
 .header {
+  z-index: 9999;
+  position: fixed;
   width: 100%;
   height: auto;
   padding: $padding-default;

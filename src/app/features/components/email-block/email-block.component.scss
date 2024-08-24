@@ -1,0 +1,46 @@
+@import '../../../../sass/main';
+
+.email {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 14rem;
+  padding: 0 $padding-big 0 $padding-big;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+
+  .email-container {
+    rotate: 90deg;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      font-family: $tertiary-font;
+      font-size: 1.2rem;
+      color: darkgrey;
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: $main-yellow-bright;
+      }
+    }
+  }
+
+  .decorative-line-container {
+    margin-top: 9rem;
+    height: 10rem;
+    width: 0.05rem;
+    background-color: darkgrey;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

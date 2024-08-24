@@ -1,7 +1,7 @@
 interface Link {
   index: string;
   label: string;
-  url: string;
+  id: string;
 }
 
 export type { Link as LinkType };
