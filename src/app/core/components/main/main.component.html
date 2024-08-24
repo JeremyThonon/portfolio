@@ -8,7 +8,13 @@
     [subtitle]="content.subtitle"
     [decorative]="content.decorative"
     [paragraph]="content.paragraph"
-    [button]="content.button"></app-content>
+    [button]="content.button">
+    <section additional-content class="additional-content-container">
+      <div
+        class="about-additional-content"
+        *ngIf="content.id === 'about'"></div>
+    </section>
+  </app-content>
 
   <app-email-block></app-email-block>
   <app-socials-block></app-socials-block>

@@ -8,4 +8,8 @@ import { contents } from './main.conf';
 })
 export class MainComponent {
   contents = contents;
+  imageObject = {
+    src: 'me.jpg',
+    alt: 'Jérémy Thonon picture',
+  };
 }

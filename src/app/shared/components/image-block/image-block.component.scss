@@ -1,0 +1,17 @@
+.image-container {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.4rem;
+
+  app-image-block {
+    width: 100%;
+    height: 100%;
+    figure {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
