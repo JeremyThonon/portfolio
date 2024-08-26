@@ -1,0 +1,36 @@
+@import '../../../../sass/main';
+
+.back-to-top {
+  border: 0.1rem solid $main-yellow-bright;
+
+  position: fixed;
+  bottom: 5rem;
+  right: 10rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  color: white;
+  transition: all 250ms ease-in-out;
+
+  svg {
+    transition: all 250ms ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $main-yellow-bright;
+    background-color: rgba($main-yellow-bright, 0.1);
+
+    svg {
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    bottom: 6.4rem;
+    right: 1.6rem;
+  }
+}
