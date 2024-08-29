@@ -43,7 +43,7 @@ export const contents: ContentType[] = [
     },
     decorative: true,
     paragraph: {
-      text: 'Hello! My name is Jeremy and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I decided to try C, Python and Javascript programming languages on EDX platform — Writing some lines of code to made a remake of Mario pyramids ! Fast-forward to today, and I’ve had the privilege of working at an international sport agency, a huge and dynamic corporation. My main focus these days is to improve my backend development skills, be curious about new technologies and best practices. I also recently started to learn more about Rust and Typescript programming languages. Here are a few technologies I’ve been working with recently:',
+      text: 'Hello! My name is Jeremy and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I decided learn Python and Javascript programming languages on EDX platform — Writing some lines of code to made a remake of Mario pyramids ! Fast-forward to today, and I’ve had the privilege of working at an international sport agency, a huge and dynamic corporation. My main focus these days is to improve my backend development skills, be curious about new technologies and best practices. I also recently started to learn more about Rust and Typescript programming languages. Here are a few technologies I’ve been working with recently:',
       display: true,
     },
     button: {
@@ -126,4 +126,9 @@ export const contents: ContentType[] = [
       display: true,
     },
   },
+];
+
+export const programmingLanguages = [
+  ['Javascript (ES6+)', 'Typescript', 'Svelte.js'],
+  ['Angular', 'Node.js', 'Express.js'],
 ];

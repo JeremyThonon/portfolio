@@ -12,6 +12,6 @@
     *ngIf="paragraph.display"
     [innerHTML]="paragraph.text"></p>
   <app-button *ngIf="button.display" [label]="button.text"></app-button>
-</article>
 
-<ng-content select="[additional-content]"></ng-content>
+  <ng-content select="[additional-content]"></ng-content>
+</article>

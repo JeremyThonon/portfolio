@@ -10,9 +10,11 @@
     [paragraph]="content.paragraph"
     [button]="content.button">
     <section additional-content class="additional-content-container">
-      <div
-        class="about-additional-content"
-        *ngIf="content.id === 'about'"></div>
+      <div class="about-additional-content" *ngIf="content.id === 'about'">
+        <ul *ngFor="let item of languages">
+          <li *ngFor="let language of item">{{ language }}</li>
+        </ul>
+      </div>
     </section>
   </app-content>
 
