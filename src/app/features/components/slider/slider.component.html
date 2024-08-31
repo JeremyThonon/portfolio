@@ -1,0 +1,22 @@
+<section class="slider">
+  <div class="slider__buttons">
+    <button
+      class="button"
+      [ngClass]="{ 'button--active': activeItem === item }"
+      *ngFor="let item of items; index as i"
+      (click)="handleSelectedItem(i)">
+      {{ item.title }}
+    </button>
+  </div>
+
+  <div class="slider__contents">
+    <h2 class="title">
+      {{ activeItem.title }}
+      <span>{{ activeItem.company }}</span>
+    </h2>
+    <h3 class="date">{{ activeItem.date }}</h3>
+    <p class="text">
+      {{ activeItem.content }}
+    </p>
+  </div>
+</section>

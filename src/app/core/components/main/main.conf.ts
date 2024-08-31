@@ -59,7 +59,7 @@ export const contents: ContentType[] = [
       display: true,
     },
     title: {
-      text: 'Experience',
+      text: 'Where I’ve worked',
       display: true,
     },
     subtitle: {
@@ -131,4 +131,20 @@ export const contents: ContentType[] = [
 export const programmingLanguages = [
   ['Javascript (ES6+)', 'Typescript', 'Svelte.js'],
   ['Angular', 'Node.js', 'Express.js'],
+];
+
+export const experiences = [
+  {
+    title: 'Front-end developer',
+    date: 'Since 2023 - present',
+    company: '@Decathlon Belgium',
+    content:
+      'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Quisquam, quos.',
+  },
+  {
+    title: 'Logistics manager',
+    date: '2016 - 2022',
+    company: '@Agrifirm Belgium',
+    content: 'lBOnjour les enfants',
+  },
 ];

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { contents, programmingLanguages } from './main.conf';
+import { contents, programmingLanguages, experiences } from './main.conf';
 
 @Component({
   selector: 'app-main',
@@ -9,6 +9,7 @@ import { contents, programmingLanguages } from './main.conf';
 export class MainComponent {
   contents = contents;
   languages = programmingLanguages;
+  items = experiences;
   imageObject = {
     src: 'me.jpg',
     alt: 'Jérémy Thonon picture',

@@ -15,6 +15,12 @@
           <li *ngFor="let language of item">{{ language }}</li>
         </ul>
       </div>
+
+      <div
+        class="experience-additional-content"
+        *ngIf="content.id === 'experience'">
+        <app-slider [items]="items"></app-slider>
+      </div>
     </section>
   </app-content>
 

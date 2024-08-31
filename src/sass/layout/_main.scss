@@ -45,6 +45,14 @@ main {
         color: darkgray;
         line-height: 2.2rem;
       }
+
+      .additional-content-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
     }
 
     @media screen and (max-width: 768px) {
@@ -119,14 +127,9 @@ main {
       }
     }
   }
+
   .about {
     .additional-content-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      border-right: 0.1rem solid $main-yellow-bright;
-
       .about-additional-content {
         background-color: $main-dark-charcoal;
         display: flex;
@@ -158,9 +161,15 @@ main {
   }
 
   .experience {
+    .additional-content-container {
+      .experience-additional-content {
+      }
+    }
   }
+
   .work {
   }
+
   .contact {
   }
 
