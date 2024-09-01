@@ -5,18 +5,20 @@
       [ngClass]="{ 'button--active': activeItem === item }"
       *ngFor="let item of items; index as i"
       (click)="handleSelectedItem(i)">
-      {{ item.title }}
+      {{ item.company }}
     </button>
   </div>
 
   <div class="slider__contents">
     <h2 class="title">
       {{ activeItem.title }}
-      <span>{{ activeItem.company }}</span>
+      <span>{{ companyCopy }}</span>
     </h2>
     <h3 class="date">{{ activeItem.date }}</h3>
-    <p class="text">
-      {{ activeItem.content }}
-    </p>
+    <ul class="list">
+      <li class="list__element" *ngFor="let element of activeItem.content">
+        {{ element }}
+      </li>
+    </ul>
   </div>
 </section>

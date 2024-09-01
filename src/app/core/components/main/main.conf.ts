@@ -137,14 +137,31 @@ export const experiences = [
   {
     title: 'Front-end developer',
     date: 'Since 2023 - present',
-    company: '@Decathlon Belgium',
-    content:
-      'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Quisquam, quos.',
+    company: 'Decathlon',
+    content: [
+      'Use of Svelte.js, Tailwind CSS and Decathlon’s in-house design system to develop responsive and consistent user interfaces',
+      'Implementation of unit tests with Jest to guarantee the reliability of the front-end code',
+      'Route management with Express/Node.js to ensure a robust back-end architecture',
+      'Integration and management of an internal CMS based on Strapi to facilitate content management and component structure',
+      'Participation in bi-weekly meetings to plan sprints and daily stand-up meetings to share daily stand-up meetings to share progress and resolve problems',
+      'Weekly rotation of the ‘Dev of the Week’ who is responsible for production start-up and emergency management',
+    ],
   },
   {
     title: 'Logistics manager',
     date: '2016 - 2022',
-    company: '@Agrifirm Belgium',
-    content: 'lBOnjour les enfants',
+    company: 'Agrifirm',
+    content: [
+      'Transport planning, including deliveries to customers, orders to suppliers, loading of barges for overseas destinations and collection of cereals from the field during harvest',
+      'Warehouse stock management',
+      'Logistics incident management',
+      'Quality control of incoming goods (fertilisers, cereals, animal feed, plant protection products)',
+      'Planning and distribution of tasks between the various teams on site',
+      'Management of staff rotation according to holidays, which is particularly important and difficult during the harvest period, requiring a potential presence on site day and night',
+      'Customer service and order processing',
+      'Maintenance of handling vehicles',
+      'Manufacture of various bulk mixes to order (fertilisers, animal feed) in accordance with GMP standards',
+      'Maintaining the cleanliness and organisation of the storage site in accordance with GMP standards',
+    ],
   },
 ];
