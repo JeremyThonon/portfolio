@@ -66,7 +66,7 @@ export const contents: ContentType[] = [
       text: '',
       display: false,
     },
-    decorative: true,
+    decorative: false,
     paragraph: {
       text: '',
       display: false,
