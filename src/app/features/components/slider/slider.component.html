@@ -9,7 +9,7 @@
     </button>
   </div>
 
-  <div class="slider__contents">
+  <div class="slider__contents" [@slide]="animate ? 'visible' : 'hidden'">
     <h2 class="title">
       {{ activeItem.title }}
       <span>{{ companyCopy }}</span>

@@ -24,6 +24,7 @@ export const contents: ContentType[] = [
     button: {
       text: 'About me',
       display: true,
+      href: '',
     },
   },
   {
@@ -49,6 +50,7 @@ export const contents: ContentType[] = [
     button: {
       text: 'Learn more',
       display: false,
+      href: '',
     },
   },
   {
@@ -74,6 +76,7 @@ export const contents: ContentType[] = [
     button: {
       text: '',
       display: false,
+      href: '',
     },
   },
   {
@@ -99,6 +102,7 @@ export const contents: ContentType[] = [
     button: {
       text: '',
       display: false,
+      href: '',
     },
   },
   {
@@ -106,24 +110,25 @@ export const contents: ContentType[] = [
     id: 'contact',
     span: {
       text: '04.',
-      display: false,
+      display: true,
     },
     title: {
       text: 'Get in touch',
       display: true,
     },
     subtitle: {
-      text: 'Feel free to contact me',
-      display: true,
+      text: 'Feel free to send me an email if you find an interesting project to work together on.',
+      display: false,
     },
     decorative: false,
     paragraph: {
-      text: 'This is a simple website created with Angular.',
-      display: false,
+      text: 'Feel free to send me an email if you find an interesting project to work together on !',
+      display: true,
     },
     button: {
       text: 'Email',
       display: true,
+      href: 'mailto:jeremythonon96@hotmail.com',
     },
   },
 ];

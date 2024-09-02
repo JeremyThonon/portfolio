@@ -161,17 +161,38 @@ main {
     }
   }
 
-  .experience {
-    .additional-content-container {
-      .experience-additional-content {
-      }
-    }
-  }
-
   .work {
   }
 
   .contact {
+    article {
+      div {
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      app-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          p {
+            color: white;
+          }
+
+          &:hover {
+            p {
+              color: $main-yellow-bright;
+            }
+          }
+        }
+      }
+    }
   }
 
   .about,

@@ -13,5 +13,5 @@ export class ContentComponent {
   @Input() subtitle = { text: '', display: false };
   @Input() decorative = false;
   @Input() paragraph = { text: '', display: false };
-  @Input() button = { text: '', display: false };
+  @Input() button = { text: '', display: false, href: '' };
 }
