@@ -11,13 +11,20 @@ export class ButtonComponent {
   @Input() buttonClass = '';
   @Input() labelClass = '';
   @Input() download = false;
+  @Input() href = '';
 
   handleClick(download: boolean) {
     if (download) {
       this.downloadPdf();
+    } else if (this.href) {
+      this.sendEmail();
     } else if (this.label === 'About me') {
       scrollToContent('#about');
     }
+  }
+
+  sendEmail() {
+    window.open(this.href);
   }
 
   downloadPdf() {

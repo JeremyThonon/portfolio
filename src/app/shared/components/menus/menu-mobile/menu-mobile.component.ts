@@ -28,8 +28,8 @@ import {
           opacity: 0,
         })
       ),
-      transition('visible => hidden', animate('250ms ease-out')),
-      transition('hidden => visible', animate('250ms ease-in')),
+      transition('visible => hidden', animate('200ms ease-in-out')),
+      transition('hidden => visible', animate('200ms ease-in-out')),
     ]),
   ],
 })
@@ -43,7 +43,7 @@ export class MenuMobileComponent {
     this.isOpen = !this.isOpen;
 
     if (this.isOpen) {
-      let timeout = 250;
+      let timeout = 200;
 
       links.forEach(link => {
         setTimeout(() => {
@@ -52,11 +52,11 @@ export class MenuMobileComponent {
           if (links[links.length - 1].isMounted) {
             setTimeout(() => {
               this.allLinksMounted = true;
-            }, 250);
+            }, 200);
           }
         }, timeout);
 
-        timeout += 250;
+        timeout += 200;
       });
     } else {
       links.forEach(link => {

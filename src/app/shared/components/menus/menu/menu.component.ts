@@ -28,8 +28,8 @@ import {
           opacity: 0,
         })
       ),
-      transition('visible => hidden', animate('250ms ease-out')),
-      transition('hidden => visible', animate('250ms ease-in')),
+      transition('visible => hidden', animate('200ms ease-in-out')),
+      transition('hidden => visible', animate('200ms ease-in-out')),
     ]),
   ],
 })
@@ -49,7 +49,7 @@ export class MenuComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    let timeout = 300;
+    let timeout = 200;
 
     links.forEach(link => {
       setTimeout(() => {
@@ -58,11 +58,11 @@ export class MenuComponent implements OnInit {
         if (links[links.length - 1].isMounted) {
           setTimeout(() => {
             this.allLinksMounted = true;
-          }, 300);
+          }, 200);
         }
       }, timeout);
 
-      timeout += 300;
+      timeout += 200;
     });
   }
 }
