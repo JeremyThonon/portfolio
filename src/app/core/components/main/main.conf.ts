@@ -79,37 +79,37 @@ export const contents: ContentType[] = [
       href: '',
     },
   },
-  {
-    class: 'content work',
-    id: 'work',
-    span: {
-      text: '03.',
-      display: true,
-    },
-    title: {
-      text: 'My works',
-      display: true,
-    },
-    subtitle: {
-      text: '',
-      display: false,
-    },
-    decorative: true,
-    paragraph: {
-      text: '',
-      display: false,
-    },
-    button: {
-      text: '',
-      display: false,
-      href: '',
-    },
-  },
+  // {
+  //   class: 'content work',
+  //   id: 'work',
+  //   span: {
+  //     text: '03.',
+  //     display: true,
+  //   },
+  //   title: {
+  //     text: 'My works',
+  //     display: true,
+  //   },
+  //   subtitle: {
+  //     text: '',
+  //     display: false,
+  //   },
+  //   decorative: true,
+  //   paragraph: {
+  //     text: '',
+  //     display: false,
+  //   },
+  //   button: {
+  //     text: '',
+  //     display: false,
+  //     href: '',
+  //   },
+  // },
   {
     class: 'content contact',
     id: 'contact',
     span: {
-      text: '04.',
+      text: '03.',
       display: true,
     },
     title: {
