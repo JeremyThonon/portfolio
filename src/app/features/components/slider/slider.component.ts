@@ -17,14 +17,14 @@ import {
         'visible',
         style({
           transform: 'translateX(0)',
-          opacity: 1,
+          opacity: '1',
         })
       ),
       state(
         'hidden',
         style({
-          opacity: 0,
           transform: 'translateX(-100%)',
+          opacity: '0',
         })
       ),
       transition('visible => hidden', animate('300ms ease-in-out')),
@@ -45,10 +45,11 @@ export class SliderComponent implements OnInit {
 
   handleSelectedItem(index: number) {
     this.animate = false;
-    this.activeItem = this.items[index];
-    this.companyCopy = `@${this.activeItem.company} Belgium`;
+
     setTimeout(() => {
       this.triggerAnimation();
+      this.activeItem = this.items[index];
+      this.companyCopy = `@${this.activeItem.company}`;
     }, 300);
   }
 
