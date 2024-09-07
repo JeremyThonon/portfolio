@@ -1,4 +1,9 @@
-<header class="header">
+<header
+  class="header"
+  [ngClass]="{
+    'header--scrolledBottom': scrolledBottom,
+    'header--scrolledTop': scrolledTop,
+  }">
   <app-menu-mobile *ngIf="isMobile; else elseBlock"></app-menu-mobile>
   <ng-template #elseBlock>
     <app-menu></app-menu>

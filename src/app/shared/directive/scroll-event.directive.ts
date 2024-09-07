@@ -1,13 +1,23 @@
-import { Directive, HostListener, Output, EventEmitter } from '@angular/core';
+import {
+  Directive,
+  HostListener,
+  ElementRef,
+  Output,
+  EventEmitter,
+} from '@angular/core';
 
 @Directive({
   selector: '[appScrollEvent]',
 })
 export class ScrollEventDirective {
-  @Output() scrolled = new EventEmitter<Event>();
+  constructor(private elementRef: ElementRef) {}
 
-  @HostListener('scroll', ['$event'])
-  onScroll(event: Event) {
-    this.scrolled.emit(event);
+  @Output() emitYOffset = new EventEmitter<number>();
+
+  @HostListener('document:wheel')
+  onScroll() {
+    this.emitYOffset.emit(
+      this.elementRef.nativeElement.getBoundingClientRect().top
+    );
   }
 }
