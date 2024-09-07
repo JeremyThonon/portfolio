@@ -13,7 +13,7 @@ import {
   templateUrl: './menu-mobile.component.html',
   styleUrl: './menu-mobile.component.scss',
   animations: [
-    trigger('visibility', [
+    trigger('animateLinks', [
       state(
         'visible',
         style({
@@ -58,7 +58,7 @@ export class MenuMobileComponent {
 
         timeout += 200;
       });
-    } else {
+    } else if (!this.isOpen) {
       links.forEach(link => {
         link.isMounted = false;
       });
