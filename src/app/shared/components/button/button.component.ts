@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { scrollToContent } from '../menus/menu.conf';
+import { scrollToContent } from '../../utils/scroll';
 
 @Component({
   selector: 'app-button',

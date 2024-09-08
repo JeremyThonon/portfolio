@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { links, scrollToContent } from '../menu.conf';
+import { links } from '../menu.conf';
+import { scrollToContent } from '../../../utils/scroll';
 import {
   trigger,
   state,
