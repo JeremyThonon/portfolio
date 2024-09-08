@@ -1,6 +1,6 @@
-import { ContentType } from '../../../shared/components/content/content.interfaces';
+import { Content } from '../../../shared/components/content/content';
 
-export const contents: ContentType[] = [
+export const contents: Content[] = [
   {
     class: 'content introduction',
     id: 'intro',

@@ -1,4 +1,4 @@
-interface Content {
+export interface Content {
   class: string;
   id: string;
   span: custom;
@@ -19,5 +19,3 @@ interface customButton {
   display: boolean;
   href: string;
 }
-
-export type { Content as ContentType };

@@ -1,18 +1,16 @@
 @import '../../../../sass/main';
 
 .back-to-top {
-  border: 0.1rem solid $main-yellow-bright;
+  @include flex-center;
 
   position: fixed;
   bottom: 5rem;
   right: 10rem;
   width: 5rem;
   height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.4rem;
-  color: white;
+  border: 0.1rem solid $main-yellow-bright;
+  border-radius: $size-xsmall;
+  color: $main-white;
   transition: all 250ms ease-in-out;
 
   svg {
@@ -30,7 +28,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    bottom: 6.4rem;
-    right: 1.6rem;
+    bottom: $size-default * 4;
+    right: $size-default;
   }
 }
