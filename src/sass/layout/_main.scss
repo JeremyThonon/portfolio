@@ -1,6 +1,7 @@
 @import '../utils/sizes';
 @import '../utils/variables';
 @import '../base/typography';
+@import '../mixins/mixins';
 
 main {
   width: 100%;
@@ -28,7 +29,7 @@ main {
 
         .title-span-text {
           font-family: $tertiary-font;
-          font-size: 1.5rem;
+          font-size: $font-size-default;
           color: $main-yellow-bright;
         }
 
@@ -42,7 +43,7 @@ main {
         letter-spacing: 0.1rem;
         font-family: $secondary-font;
         font-size: 1.8rem;
-        color: darkgray;
+        color: $main-grey;
         line-height: 2.2rem;
       }
 
@@ -74,7 +75,7 @@ main {
         }
 
         h3 {
-          color: darkgray;
+          color: $main-grey;
         }
       }
 
@@ -103,7 +104,7 @@ main {
 
       button {
         p {
-          color: white;
+          color: $main-white;
         }
       }
     }
@@ -112,7 +113,7 @@ main {
       article {
         div {
           span {
-            font-size: 1.2rem;
+            font-size: $font-size-medium;
           }
 
           h2,
@@ -122,7 +123,7 @@ main {
         }
 
         p {
-          font-size: 1.5rem;
+          font-size: $font-size-default;
         }
       }
     }
@@ -147,8 +148,8 @@ main {
             font-weight: 300;
             letter-spacing: 0.1rem;
             font-family: $secondary-font;
-            font-size: 1.2rem;
-            color: darkgray;
+            font-size: $font-size-medium;
+            color: $main-grey;
             line-height: 2.2rem;
 
             &::marker {
@@ -174,12 +175,11 @@ main {
       }
 
       app-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
+
         button {
           p {
-            color: white;
+            color: $main-white;
           }
 
           &:hover {
@@ -209,7 +209,7 @@ main {
 
         h2 {
           width: max-content;
-          font-size: 2.4rem;
+          font-size: $font-size-big;
         }
 
         div {
@@ -222,7 +222,7 @@ main {
             width: 100%;
             display: flex;
             height: 0.05rem;
-            background-color: darkgrey;
+            background-color: $main-grey;
           }
         }
       }
@@ -234,7 +234,7 @@ main {
       article {
         div {
           .title-span-text {
-            font-size: 1.5rem;
+            font-size: $font-size-default;
           }
 
           h2 {
@@ -247,7 +247,7 @@ main {
         }
 
         p {
-          font-size: 1.5rem;
+          font-size: $font-size-default;
         }
       }
     }

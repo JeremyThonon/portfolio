@@ -1,12 +1,15 @@
 $unit: 10px;
 
-$size-default: calc($unit * 1.6);
-$size-xsmall: calc($unit * 0.4);
-$size-small: calc($unit * 0.8);
-$size-medium: calc($unit * 1.2);
-$size-big: calc($unit * 2.4);
-$size-xbig: calc($unit * 3.2);
+$size-default: calc($unit * 1.6); // 16px
+$size-xsmall: calc($unit * 0.4); // 4px
+$size-small: calc($unit * 0.8); // 8px
+$size-medium: calc($unit * 1.2); // 12px
+$size-big: calc($unit * 2.4); // 24px
+$size-xbig: calc($unit * 3.2); // 32px
 
+/**
+ * Padding
+ */
 $padding-xsmall: $size-xsmall;
 $padding-small: $size-small;
 $padding-default: $size-default;
@@ -14,9 +17,22 @@ $padding-medium: $size-medium;
 $padding-big: $size-big;
 $padding-xbig: $size-xbig;
 
+/**
+ * Margin
+ */
 $margin-xsmall: $size-xsmall;
 $margin-small: $size-small;
 $margin-default: $size-default;
 $margin-medium: $size-medium;
 $margin-big: $size-big;
 $margin-xbig: $size-xbig;
+
+/**
+ * Font-size
+ */
+$font-size-xsmall: $size-xsmall;
+$font-size-small: $size-small;
+$font-size-default: $size-default;
+$font-size-medium: $size-medium;
+$font-size-big: $size-big;
+$font-size-xbig: $size-xbig;

@@ -16,13 +16,13 @@
     overflow-y: hidden;
 
     .button {
-      width: 16rem;
+      width: $size-default * 10;
       padding: $padding-big;
       font-family: $tertiary-font;
-      font-size: 1.2rem;
-      color: white;
+      font-size: $font-size-medium;
+      color: $main-white;
       text-align: center;
-      border-top: 0.1rem solid darkgrey;
+      border-top: 0.1rem solid $main-grey;
       transition: all 250ms ease-in-out;
 
       &--active {
@@ -57,7 +57,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      color: white;
+      color: $main-white;
       overflow-y: hidden;
 
       span {
@@ -74,9 +74,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      font-size: 1.6rem;
+      font-size: $font-size-default;
       font-family: $tertiary-font;
-      color: darkgrey;
+      color: $main-grey;
     }
 
     .list {
@@ -90,8 +90,8 @@
       &__element {
         padding: $padding-xsmall;
         font-family: $secondary-font;
-        font-size: 1.6rem;
-        color: darkgrey;
+        font-size: $font-size-default;
+        color: $main-grey;
         list-style-type: circle;
         list-style-position: inside;
 
@@ -105,17 +105,17 @@
   @media screen and (max-width: 768px) {
     &__contents {
       .title {
-        font-size: 1.6rem;
+        font-size: $font-size-default;
       }
 
       .date {
-        font-size: 1.4rem;
+        font-size: $font-size-medium;
       }
 
       .list {
         overflow-y: auto;
         &__element {
-          font-size: 1.4rem;
+          font-size: $font-size-medium;
         }
       }
     }

@@ -1,6 +1,8 @@
+@import '../../../../sass/main';
+
 .image-container {
-  width: 15rem;
-  height: 15rem;
+  width: $size-default * 10;
+  height: $size-default * 10;
   border-radius: 0.4rem;
 
   app-image-block {
