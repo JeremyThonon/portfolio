@@ -1,6 +1,6 @@
-import { LinkType } from './menu.interface';
+import { Link } from './menu';
 
-export const links: LinkType[] = [
+export const links: Link[] = [
   {
     index: '01.',
     label: 'About',
