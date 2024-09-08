@@ -13,14 +13,14 @@ export const links: Link[] = [
     id: '#experience',
     isMounted: false,
   },
-  // {
-  //   index: '03.',
-  //   label: 'Work',
-  //   id: '#work',
-  //   isMounted: false,
-  // },
   {
     index: '03.',
+    label: 'Work',
+    id: '#work',
+    isMounted: false,
+  },
+  {
+    index: '04.',
     label: 'Contact',
     id: '#contact',
     isMounted: false,
