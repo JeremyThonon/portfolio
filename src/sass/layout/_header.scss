@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: transparent;
+  background-color: $main-dark-charcoal;
   transition: all 400ms ease-in-out;
 
   &--scrolledBottom {
