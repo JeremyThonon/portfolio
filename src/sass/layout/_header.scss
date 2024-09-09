@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: $main-dark-charcoal;
   transition: all 400ms ease-in-out;
 
   &--scrolledBottom {
@@ -20,5 +19,9 @@
   &--scrolledTop {
     backdrop-filter: blur(10px);
     box-shadow: rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-color: $main-dark-charcoal;
   }
 }

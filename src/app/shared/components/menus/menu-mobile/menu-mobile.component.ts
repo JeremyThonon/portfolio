@@ -14,7 +14,7 @@ import {
   templateUrl: './menu-mobile.component.html',
   styleUrl: './menu-mobile.component.scss',
   animations: [
-    trigger('animateLinks', [
+    trigger('links-animation', [
       state(
         'visible',
         style({
