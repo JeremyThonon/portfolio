@@ -7,12 +7,12 @@
     </button>
   </div>
 
-  <nav *ngIf="isOpen" [ngClass]="{ visible: isOpen }">
-    <ul class="links">
+  <nav [ngClass]="{ open: isOpen, close: !isOpen }">
+    <ul class="links" *ngIf="isOpen">
       <li
         *ngFor="let link of links"
         class="links-item"
-        [@animateLinks]="link.isMounted ? 'visible' : 'hidden'">
+        [@links-animation]="link.isMounted ? 'visible' : 'hidden'">
         <span class="links-item__index">{{ link.index }}</span>
         <a
           (click)="handleClick(link.id)"
@@ -27,7 +27,8 @@
     </ul>
 
     <app-button
-      [@animateLinks]="allLinksMounted ? 'visible' : 'hidden'"
+      *ngIf="isOpen"
+      [@links-animation]="allLinksMounted ? 'visible' : 'hidden'"
       [label]="buttonLabel"
       [download]="true"></app-button>
   </nav>
