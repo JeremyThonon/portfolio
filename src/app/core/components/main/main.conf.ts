@@ -127,7 +127,7 @@ export const contents: Content[] = [
     },
     button: {
       text: 'Email',
-      display: true,
+      display: false,
       href: 'mailto:jeremythonon96@hotmail.com',
     },
   },
