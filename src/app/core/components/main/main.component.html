@@ -21,6 +21,10 @@
         *ngIf="content.id === 'experience'">
         <app-slider [items]="items"></app-slider>
       </div>
+
+      <div class="contact-additional-content" *ngIf="content.id === 'contact'">
+        <app-contact-form></app-contact-form>
+      </div>
     </section>
   </app-content>
 

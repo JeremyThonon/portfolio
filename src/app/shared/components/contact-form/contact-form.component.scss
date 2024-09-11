@@ -1,0 +1,56 @@
+@import '../../../../sass/main.scss';
+
+form {
+  @include flex-center;
+
+  width: 60rem;
+  height: 100%;
+  padding: $padding-default;
+  flex-direction: column;
+
+  .field {
+    @include flex-center;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    flex-direction: column;
+
+    label {
+      position: absolute;
+      left: $padding-default;
+      top: calc(2.5rem - 1.1rem);
+      padding: $padding-xsmall $padding-small;
+      font-size: $font-size-medium;
+      background-color: $main-dark-charcoal;
+    }
+
+    input {
+      width: 100%;
+      padding: $padding-default;
+      color: $main-white;
+      background-color: transparent;
+      outline: none;
+      border: 0.05rem solid $main-yellow-bright;
+      border-radius: $size-xsmall;
+    }
+  }
+
+  .submit {
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: $padding-default;
+    color: $main-dark-charcoal;
+    font-size: $font-size-default;
+    font-weight: bold;
+    background-color: $main-yellow-bright;
+    border-radius: $size-xsmall;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: $main-white;
+      background-color: $main-dark-charcoal;
+      border: 0.1rem solid $main-yellow-bright;
+    }
+  }
+}

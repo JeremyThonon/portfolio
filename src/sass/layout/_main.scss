@@ -174,18 +174,14 @@ main {
         text-align: center;
       }
 
-      app-button {
-        @include flex-center;
+      .additional-content-container {
+        .contact-additional-content {
+          width: 100%;
 
-        button {
-          p {
-            color: $main-white;
-          }
+          app-contact-form {
+            @include flex-center;
 
-          &:hover {
-            p {
-              color: $main-yellow-bright;
-            }
+            width: 100%;
           }
         }
       }

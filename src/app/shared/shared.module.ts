@@ -5,6 +5,8 @@ import { MenuMobileComponent } from './components/menus/menu-mobile/menu-mobile.
 import { ButtonComponent } from './components/button/button.component';
 import { ContentComponent } from './components/content/content.component';
 import { ImageBlockComponent } from './components/image-block/image-block.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,14 +15,16 @@ import { ImageBlockComponent } from './components/image-block/image-block.compon
     ButtonComponent,
     ContentComponent,
     ImageBlockComponent,
+    ContactFormComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   exports: [
     MenuComponent,
     MenuMobileComponent,
     ButtonComponent,
     ContentComponent,
     ImageBlockComponent,
+    ContactFormComponent,
   ],
 })
 export class SharedModule {}
